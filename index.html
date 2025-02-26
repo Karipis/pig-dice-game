@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">The game of Pig</h1>
+    <h2>Rules</h2>
+    <p style="text-align: center;">Roll as many times as you like, but if you roll a 1, you lose your round points. Click Save to lock in your score. The first player to reach 100 wins!</p>
+        <div id="player-row">
+            <div class="player-col">
+                <h2>Player 1</h2>
+                <div id="player1-img" class="player-img current">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <h3 id="player1-score">Total Points: 0/100</h3>
+                <h3 id="player1-temp-score">Round Points: 0</h3>
+            </div>
+
+
+            <div class="player-col">
+                <h2>Player 2</h2>
+                <div id="player2-img" class="player-img">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <h3 id="player2-score">Total Points: 0/100</h3>
+                <h3 id="player2-temp-score">Round Points: 0</h3>
+            </div>
+        </div>
+
+
+        <!--
+        <table>
+            <thead>
+                <th>Total Points</th>
+                <th>Round Points</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>100 </td>
+                    <td>200 </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+        --> 
+        <i id="die" class="fa-solid fa-dice-six"></i>
+
+
+        <div id="button-row">
+            <button id="btn-roll">Roll the die</button>
+            <button id="btn-save">Save points</button>
+        </div>
+
+</body>
+
+
+<script src="https://kit.fontawesome.com/4d43554a1b.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>

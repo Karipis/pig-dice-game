@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    flex-direction: column;
+    background: #232323;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-family: monospace;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    font-size: 70px;
+    font-family: "Honk", serif;
+}
+
+#player-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.player-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 15px;
+}
+
+.player-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all ease 0.6s;
+}
+
+.fa-user {
+    font-size: 50px;
+}
+
+.current {
+    background-color: #952e76;
+}
+
+#die {
+    color: white;
+    font-size: 150px;
+    transition: all ease 0.6s;
+}
+
+.dice-roll {
+    color: rgba(255, 255, 255, 0.461);
+    animation: rotation 1.2s;
+}
+
+@keyframes rotation {
+    20% {
+        transform: rotate(60deg);
+    }
+
+    40% {
+        transform: rotate(-60deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#btn-roll,
+#btn-save {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+}
+
+#btn-save {
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+
+#button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
