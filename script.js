@@ -139,6 +139,6 @@ function restartGame(){
     player2_score.innerHTML = "Round Points: " + player_2_points + "/100";
     player2_TempScore.innerHTML = "Round Points: 0";
     title.innerHTML = 'The game of pig';
-    player1_img.classList.toggle('current');
-    player2_img.classList.toggle('current');
+    player1_img.classList.add('current');
+    player2_img.classList.remove('current');
 }
