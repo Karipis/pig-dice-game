@@ -8,7 +8,7 @@ const player1_TempScore = document.getElementById('player1-temp-score');
 const player2_TempScore = document.getElementById('player2-temp-score');
 const player1_img = document.getElementById('player1-img');
 const player2_img = document.getElementById('player2-img');
-const diceSound = new Audio('/dice-sound.mp3');
+const diceSound = new Audio('dice-sound.mp3');
 
 var player_1_points = 0;
 var player_2_points = 0;
